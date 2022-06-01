@@ -1,0 +1,32 @@
+.box {
+    border: 2px solid black;
+    padding: 1em;
+    width: 300px;
+    position: fixed;
+    top: 20em;
+    left: 40vw;
+
+    transition: all 0.5s cubic-bezier(0.85, 0, 0.15, 1);
+
+    transition-property: width, left, top;
+    transition-duration: 0.5s, 1s, 2s;
+}
+
+.box.changed {
+    width: 500px;
+    border-color: white;
+    color: yellow;
+    background-color: blue;
+    left: 0vw;
+    top: 2em;
+}
+
+.action {
+    transition: background-color 0.5s ease;
+
+}
+
+.action:hover {
+
+    background-color: lightgreen;
+}
